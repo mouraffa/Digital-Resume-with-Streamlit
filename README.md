@@ -36,4 +36,3 @@ Here, I present my notable projects in traditional machine learning, deep learni
 
 I've gathered a list of certificates that I've earned, mentioning details like issuer, date earned, and links to credentials. It adds credibility to my expertise and achievements.
 
-Feel free to enhance the README by adding specific instructions for using the app, further details about its functionality, or any additional information that would make it more engaging for visitors to your GitHub repository. After all, it's all about me and my journey!
