@@ -3,8 +3,8 @@ import streamlit as st
 from PIL import Image
 
 # Define the base path to the images folder
-images = Path("images")
-assets = Path("assets")
+#images = Path("images")
+#assets = Path("assets")
 
 
 # Function to display each experience with added emojis for flair
@@ -39,7 +39,7 @@ def education():
     # Fachhochschule Kiel
     with st.expander("Erasmus Exchange Program at Fachhochschule Kiel , Germany "):
         display_study(
-            images/ "FH_kiel_70.jpg",
+            "images/FH_kiel_70.jpg",
             "🎓 Erasmus Exchange Program at Fachhochschule Kiel , Germany ",
             "Fachhochschule Kiel/University of applied sciences Kiel",
             "Mar 2023 - july 2023",
@@ -60,7 +60,7 @@ def education():
     # Université Hassan II Mohammedia - Master's
     with st.expander("Master's in Information Processing with a Focus on Machine Learning"):
         display_study(
-            images/"UH2C_70.png",
+            "images/UH2C_70.png",
             "🎓 Master's in Information Processing with a Focus on Machine Learning",
             "Hassan II University of Casablanca",
             "Sep 2021 - Sep 2023",
@@ -91,7 +91,7 @@ def education():
     # Université Hassan II Mohammedia - Bachelor's
     with st.expander("Bachelor's in Electrical and Electronics Engineering"):
         display_study(
-            images / "UH2C_70.png",  # Replace with the path to your logo
+            "images/UH2C_70.png",  # Replace with the path to your logo
             "Bachelor's degree, Electrical and Electronics Engineering",
             "Hassan II University of Mohammedia",
             "Sep 2020 - Jul 2021",
@@ -122,7 +122,7 @@ def experience():
 
     with st.expander("📷 AUV Team Tomkyle Internship - Underwater Image Processing"):
         display_experience(
-            images / "AUV_Tomkyle_70.jpg",  # Replace with the path to your logo
+            "images/AUV_Tomkyle_70.jpg",  # Replace with the path to your logo
             "Stereo Vision by Means of Sonar and Optical Camera",
             "AUV Team Tomkyle · Internship, Mar 2023 - Sep 2023",
             "Kiel, Schleswig-Holstein, Germany · On-site",
@@ -147,7 +147,7 @@ def experience():
 
     with st.expander("📡💡 Orange Maroc Internship - IoT and Innovation in Partnership with Google and EY"):
         display_experience(
-        images / "Orange_70.jpg",
+        "images/Orange_70.jpg",
         "Innovative Intern with a Focus on IoT Projects 🚀",
         "Internship Duration: July 2022 - September 2022 (3 months)",
         "Orange Maroc, Google, and EY Collaboration, Rabat, Morocco",
@@ -174,7 +174,7 @@ def experience():
 
     with st.expander("🎓 🚀 Smart Electronic Consumption Monitoring and Cost Conversion Meter Development"):
         display_experience(
-        images / "UH2C_70.png" ,
+        "images/UH2C_70.png" ,
         "Intern in Electrical Engineering and Programming",
         "Internship Duration: April 2021 - June 2021 (3 months)",
         "Information Processing Laboratory, Université Hassan II, Casablanca-Settat, Morocco",
@@ -379,10 +379,10 @@ def certaficate():
 
     # Replace these with your actual certificate data
     certificates_data = [
-        {"image_path": images / "yolo.jpg", "name": "YOLO: Custom Object Detection & Web App in Python", "issuer": "Udemy", "date": "jul 2023" , "linke" : "https://www.udemy.com/certificate/UC-fe981680-0d95-4381-a600-28b1bdd3c4fa/"},
-        {"image_path": images / "python.png", "name": "Python for Data Science, AI & Development", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/GU3RS3TP4FVR"},
-        {"image_path": images / "IOT.png", "name": "Introduction and Programming with IoT Boards", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/F6NW57PNER9W"},
-        {"image_path": images / "Matlab.png", "name": "MATLAB Onramp", "issuer": "MatWorks", "date": "Oct 2022" , "linke" : "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=b5eb38b5-4dc2-4d19-977c-1a5d35cf5619&"},
+        {"image_path": "images/yolo.jpg", "name": "YOLO: Custom Object Detection & Web App in Python", "issuer": "Udemy", "date": "jul 2023" , "linke" : "https://www.udemy.com/certificate/UC-fe981680-0d95-4381-a600-28b1bdd3c4fa/"},
+        {"image_path": "images/python.png", "name": "Python for Data Science, AI & Development", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/GU3RS3TP4FVR"},
+        {"image_path": "images/IOT.png", "name": "Introduction and Programming with IoT Boards", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/F6NW57PNER9W"},
+        {"image_path": "images/Matlab.png", "name": "MATLAB Onramp", "issuer": "MatWorks", "date": "Oct 2022" , "linke" : "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=b5eb38b5-4dc2-4d19-977c-1a5d35cf5619&"},
         #{"image_path": "images\python.png", "name": "Python for Data Science, AI & Development", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/GU3RS3TP4FVR"},
         #{"image_path": "images\python.png", "name": "Python for Data Science, AI & Development", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/GU3RS3TP4FVR"},
         #{"image_path": "images\python.png", "name": "Python for Data Science, AI & Development", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/GU3RS3TP4FVR"},
@@ -410,7 +410,7 @@ def main():
 
     # --- GENERAL SETTINGS ---
     PAGE_TITLE = "Digital CV | Mouraffa Youssef"
-    PAGE_ICON = assets / "Icone.png"
+    PAGE_ICON = "assets/Icone.png"
     NAME = "Youssef Mouraffa"
     DESCRIPTION = """
     Information Processing MS Graduate | Intern @ AUV Team Tomkyle | Specializing in Computer Vision and Machine Learning.
@@ -424,7 +424,7 @@ def main():
         #"Twitter": "https://twitter.com",
     }
 
-    SOCIAL_MEDIA_logs = [ images / "XING_50.png" , images / "LinkdIn_50.png" , images / "GitHub_50.png" , images / "other_50.png" ]
+    SOCIAL_MEDIA_logs = [ "images/XING_50.png" , "images/LinkdIn_50.png" , "images/GitHub_50.png" , "images/other_50.png" ]
 
     
     st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON , layout="wide")
