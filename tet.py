@@ -207,10 +207,10 @@ def set_sidbar():
 
         st.write("\n \n ")
         st.title("LANGUAGES")
-        st.progress(85 , "English")
-        st.progress(90 , "Frensh")
-        st.progress(100 , "Arabic")
-        st.progress(20 , "German")
+        st.progress(85 , "🇬🇧 English")
+        st.progress(90 , "🇫🇷 French")
+        st.progress(100 , "🇸🇦 Arabic")
+        st.progress(20 , "🇩🇪 German")
 
         st.write("\n \n ")
         st.title("extracurricular activities")
@@ -348,7 +348,7 @@ def projects():
             with st.expander(project):
                 st.subheader(project)
                 st.markdown(ML_descreption[project])
-                st.link_button("visite in GitHub" , link)
+                st.link_button("📁 Go to GitHub 🌐" , link)
 
     
     with tab2:
@@ -375,7 +375,7 @@ def certaficate():
             st.write(f"**Issuer:** {issuer}")
             st.write(f"**Date Earned:** {date}")
             st.write("---")
-            st.link_button("Show credential" , linke)
+            st.link_button("🏅Show credential📜" , linke)
 
     # Replace these with your actual certificate data
     certificates_data = [
