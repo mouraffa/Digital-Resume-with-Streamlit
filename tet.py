@@ -330,10 +330,11 @@ def projects():
     }
     
     NLP = {
-        "🏆 Real-Time Object Detection Web App with YOLOv5 and Streamlit": "https://github.com/mouraffa/RealTime-Object-Detection-YOLOv5",
-        "🏆 Comprehensive Perceptron Implementation from Scratch with Mathematical Insights": "https://github.com/mouraffa/Perceptron-with-one-hidden-layer",
-        "🏆 Zhang's Camera Calibration: Lens Distortion Correction with Math Insights": "https://github.com/mouraffa/CameraCalibration-using-the-Zhang-s-methode",
-        "🏆 CIFAR10 Image Classification: Exploring CNNs vs. ANNs in TensorFlow": "https://github.com/mouraffa/CIFAR10-Image-Classification-Comparing-CNN-and-ANN-Models",
+        "🏆 Sentimental_Analysis_LogRegClassification": "https://github.com/mouraffa/Sentimental_Analysis_LogRegClassification",
+    }
+
+    NLP_descreption = {
+        "🏆 Sentimental_Analysis_LogRegClassification": "This project is a Twitter sentiment analysis tool that uses logistic regression to classify tweets as either positive or negative. The project is structured into three main components: function definitions, model training, and user interaction for testing the model or viewing the accuracy plot.",
     }
      
     st.write('\n')
@@ -365,6 +366,13 @@ def projects():
                 st.markdown(CNN_descreption[project])
                 st.link_button("visite in GitHub" , link)
 
+    with tab4:
+        for project , link in NLP.items():
+            with st.expander(project):
+                st.subheader(project)
+                st.markdown(NLP_descreption[project])
+                st.link_button("visite in GitHub" , link)
+
 def certaficate():
     def display_certificate(image_path, name, issuer, date , linke):
         col1 , col2 = st.columns(2)
@@ -379,13 +387,14 @@ def certaficate():
 
     # Replace these with your actual certificate data
     certificates_data = [
+        #{"image_path": "images/python.png", "name": "Python for Data Science, AI & Development", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/GU3RS3TP4FVR"},
+        #{"image_path": "images/python.png", "name": "Python for Data Science, AI & Development", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/GU3RS3TP4FVR"},
         {"image_path": "images/yolo.jpg", "name": "YOLO: Custom Object Detection & Web App in Python", "issuer": "Udemy", "date": "jul 2023" , "linke" : "https://www.udemy.com/certificate/UC-fe981680-0d95-4381-a600-28b1bdd3c4fa/"},
         {"image_path": "images/python.png", "name": "Python for Data Science, AI & Development", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/GU3RS3TP4FVR"},
         {"image_path": "images/IOT.png", "name": "Introduction and Programming with IoT Boards", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/F6NW57PNER9W"},
         {"image_path": "images/Matlab.png", "name": "MATLAB Onramp", "issuer": "MatWorks", "date": "Oct 2022" , "linke" : "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=b5eb38b5-4dc2-4d19-977c-1a5d35cf5619&"},
-        #{"image_path": "images\python.png", "name": "Python for Data Science, AI & Development", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/GU3RS3TP4FVR"},
-        #{"image_path": "images\python.png", "name": "Python for Data Science, AI & Development", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/GU3RS3TP4FVR"},
-        #{"image_path": "images\python.png", "name": "Python for Data Science, AI & Development", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/GU3RS3TP4FVR"},
+        {"image_path": "images/streamlit.jpg", "name": "Learn & Deploy Data Science Web Apps with Streamlit", "issuer": "Udemy", "date": "Nov 2023" , "linke" : "https://www.udemy.com/certificate/UC-d5cf44e4-04e6-4cd4-8afe-c9f2294b7b35/"},
+        {"image_path": "images/sql.jpg", "name": "MySQL for Data Analytics and Business Intelligence", "issuer": "Udemy", "date": "Aug 2022" , "linke" : "https://www.udemy.com/certificate/UC-84b80404-48cc-429e-bae4-077c52cc1b0e/"},
 
         
         # Add more certificates as needed
