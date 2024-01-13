@@ -124,7 +124,7 @@ def experience():
         display_experience(
             "images/AUV_Tomkyle_70.jpg",  # Replace with the path to your logo
             "Stereo Vision by Means of Sonar and Optical Camera",
-            "AUV Team Tomkyle · Internship, Mar 2023 - Sep 2023",
+            "AUV Team Tomkyle · Internship, Mar 2023 - Des 2023",
             "Kiel, Schleswig-Holstein, Germany · On-site",
             """
             Engaged in the intricate realm of stereo vision, addressing challenges posed by low-light conditions in underwater environments.
@@ -220,6 +220,7 @@ def set_sidbar():
                     """)
 
 
+
 def skills():
     # --- SKILLS ---
     st.write('\n')
@@ -227,60 +228,44 @@ def skills():
     # Adding a title for the skills section with an emoji
     st.title('Skills 🛠️')
 
-    # Creating tabs for different categories of skills
-    # Each tab represents a specific area of expertise
-    tab1, tab2, tab3, tab4, tab5 = st.tabs([
-        "Programming Languages 👨‍💻", 
-        "Data Analysis & Manipulation 🔍", 
-        "Machine Learning & Deep Learning 🤖", 
-        "Visualization & Version Control 📊", 
-        "Others 🌐"
-    ])
+    # Embedding badges in Markdown
+    badges = """
+    [![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white&logoSize=2)](#)
+    [![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white&logoSize=2)](#)
+    [![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white&logoSize=2)](#)
+    [![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white&logoSize=2)](#)
+    [![NLP](https://img.shields.io/badge/-NLP-4db33d?style=for-the-badge&logoSize=2)](#)
+    [![Data Viz](https://img.shields.io/badge/-Data%20Viz-ff69b4?style=for-the-badge&logoSize=2)](#)
+    [![YOLO](https://img.shields.io/badge/-YOLO-990000?style=for-the-badge&logoSize=2)](#)
+    [![scikit-learn](https://img.shields.io/badge/-scikit%20learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white&logoSize=2)](#)
+    [![Keras](https://img.shields.io/badge/-Keras-D00000?style=for-the-badge&logo=keras&logoColor=white&logoSize=2)](#)
+    [![NumPy](https://img.shields.io/badge/-NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white&logoSize=2)](#)
+    [![Pandas](https://img.shields.io/badge/-Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white&logoSize=2)](#)
+    [![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white&logoSize=2)](#)
+    [![Seaborn](https://img.shields.io/badge/-Seaborn-4E5180?style=for-the-badge&logo=python&logoColor=white&logoSize=2)](#)
+    [![Langchain](https://img.shields.io/badge/-Langchain-2b77b2?style=for-the-badge&logoSize=2)](#)
 
-    with tab1:
-        # Subheader for programming languages
-        st.subheader("Programming Languages")
-        # Buttons for each programming language
-        st.button("- Python 🐍")
-        st.button("- C/C++ ⚙️")
-        st.button("- MATLAB/Simulink 🔧")
+    [![C](https://img.shields.io/badge/-C-A8B9CC?style=for-the-badge&logo=c&logoColor=white&logoSize=2)](#)
+    [![C++](https://img.shields.io/badge/-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white&logoSize=2)](#)
+    [![Matlab](https://img.shields.io/badge/-Matlab-0076A8?style=for-the-badge&logo=mathworks&logoColor=white&logoSize=2)](#)
+    [![CNN](https://img.shields.io/badge/-CNN-FF0000?style=for-the-badge&logoSize=2)](#)
+    [![RNN](https://img.shields.io/badge/-RNN-FF0000?style=for-the-badge&logoSize=2)](#)
+    [![LLM](https://img.shields.io/badge/-LLM-00599C?style=for-the-badge&logoSize=2)](#)
+    [![GANs](https://img.shields.io/badge/-GANs-FF69B4?style=for-the-badge&logoSize=2)](#)
 
-    with tab2:
-        # Subheader for data analysis and manipulation
-        st.subheader("Data Analysis & Manipulation")
-        # Buttons for each data analysis skill
-        st.button("- Pandas/NumPy 🐼")
-        st.button("- SQL/Mysql 🛢️")
-        st.button("- Data Cleaning & Preprocessing 🧹")
+    [![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white&logoSize=2)](#)
+    [![Amazon](https://img.shields.io/badge/-Amazon-232F3E?style=for-the-badge&logo=amazon&logoColor=white&logoSize=2)](#)
+    [![Docker](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white&logoSize=2)](#)
+    [![SQL/Mysql](https://img.shields.io/badge/-SQL/Mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white&logoSize=2)](#)
 
-    with tab3:
-        # Subheader for machine learning and deep learning
-        st.subheader("Machine Learning & Deep Learning")
-        # Buttons for each machine learning skill
-        st.button("- Machine Learning 🤖")
-        st.button("- Deep Learning 🧠")
-        st.button("- Scikit-Learn/TensorFlow/Keras 🧮")
-        st.button("- Computer Vision (CNN) & YOLO 👁️")
-        st.button("- NLP 🗣️")
-        st.button("- OCR 📖")
-
-    with tab4:
-        # Subheader for visualization and version control
-        st.subheader("Visualization & Version Control")
-        # Buttons for each visualization and version control skill
-        st.button("- Matplotlib 📈")
-        st.button("- Streamlit 🌊")
-        st.button("- Git 🌿")
-
-    with tab5:
-        # Subheader for other skills
-        st.subheader("Others")
-        # Buttons for additional skills
-        st.button("- Cloud Computing & Big Data (AWS, IoT) ☁️")
-        st.button("- Operating Systems (Linux) 💻")
-        st.button("- Mathematics & Statistics (Linear Algebra, Statistics, Probability & Calculus) 📚")
+    [![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white&logoSize=2)](#)
+    [![Raspberry Pi](https://img.shields.io/badge/-Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberry%20pi&logoColor=white&logoSize=2)](#)
+    [![Linux](https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=white&logoSize=2)](#)
+    """
 
 
+    # Adding badges to the Streamlit app
+    st.markdown(badges)
 
 
 def projects():
@@ -331,18 +316,33 @@ def projects():
     
     NLP = {
         "🏆 Sentimental_Analysis_LogRegClassification": "https://github.com/mouraffa/Sentimental_Analysis_LogRegClassification",
+        "🏆 Skimlit-NLP-Model-for-Sentence-Classification-in-Paper-Abstracts" : "https://github.com/mouraffa/Skimlit-NLP-Model-for-Sentence-Classification-in-Paper-Abstracts"
     }
 
     NLP_descreption = {
         "🏆 Sentimental_Analysis_LogRegClassification": "This project is a Twitter sentiment analysis tool that uses logistic regression to classify tweets as either positive or negative. The project is structured into three main components: function definitions, model training, and user interaction for testing the model or viewing the accuracy plot.",
+        "🏆 Skimlit-NLP-Model-for-Sentence-Classification-in-Paper-Abstracts" : "In this NLP project, I endeavored to replicate the paper {Neural Networks for Joint Sentence Classification in Medical Paper Abstracts} using the PubMed 200k RCT dataset. Leveraging my skills in the NLP field and knowledge of TensorFlow, I aimed to create an NLP model capable of classifying abstract sentences into specific roles (e.g., objective, methods, results) to facilitate efficient literature skimming for researchers.",
+        
     }
+
+    Generative_AI = {
+        "🏆 Generative-Adversarial-Networks-GANs-for-Anime-Image-Generation": "https://github.com/mouraffa/Generative-Adversarial-Networks-GANs-for-Anime-Image-Generation",
+        "🏆 LLM-gemini-streamlit-app-end-to-end-llm" : "https://github.com/mouraffa/LLM-gemini-streamlit-app-end-to-end-llm"
+    }
+
+    Generative_AI_descreption = {
+        "🏆 Generative-Adversarial-Networks-GANs-for-Anime-Image-Generation": "In this project, I created a Generative Adversarial Networks (GANs) model for artistic image synthesis using PyTorch. The model consists of a generator and discriminator trained on the Anime Face Dataset from either GitHub or Kaggle. The training involved 100 epochs, and the progress is visualized in a video showcasing generated images for each epoch.",
+        "🏆 LLM-gemini-streamlit-app-end-to-end-llm" : "This project implements a Streamlit web application powered by the Gemini API for both question/chat and image generation. Users can choose between the two options and interact with the Gemini model to receive responses.",
+        
+    }
+
      
     st.write('\n')
     st.title("Projects & Accomplishments")
     st.write("---")
     
     
-    tab1 , tab2 , tab3 , tab4 = st.tabs(["traditional machine learning" , "Deep learning" , "computer vision" , "NLP"])
+    tab1 , tab2 , tab3 , tab4  , tab5= st.tabs(["traditional machine learning" , "Deep learning" , "computer vision" , "NLP" , "Generative AI"])
 
     with tab1:
         for project, link in ML.items():
@@ -372,6 +372,14 @@ def projects():
                 st.subheader(project)
                 st.markdown(NLP_descreption[project])
                 st.link_button("visite in GitHub" , link)
+        
+    with tab5:
+        for project , link in Generative_AI.items():
+            with st.expander(project):
+                st.subheader(project)
+                st.markdown(Generative_AI_descreption[project])
+                st.link_button("visite in GitHub" , link)
+
 
 def certaficate():
     def display_certificate(image_path, name, issuer, date , linke):
@@ -388,7 +396,7 @@ def certaficate():
     # Replace these with your actual certificate data
     certificates_data = [
         #{"image_path": "images/python.png", "name": "Python for Data Science, AI & Development", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/GU3RS3TP4FVR"},
-        #{"image_path": "images/python.png", "name": "Python for Data Science, AI & Development", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/GU3RS3TP4FVR"},
+        {"image_path": "images/NLP.jpeg", "name": "Natural Language Processing with Classification and Vector Spaces", "issuer": "Coursera & DeepLearning.AI", "date": "Nov 2023" , "linke" : "https://coursera.org/share/b3806f4a147982958bc0c44c5501db45"},
         {"image_path": "images/yolo.jpg", "name": "YOLO: Custom Object Detection & Web App in Python", "issuer": "Udemy", "date": "jul 2023" , "linke" : "https://www.udemy.com/certificate/UC-fe981680-0d95-4381-a600-28b1bdd3c4fa/"},
         {"image_path": "images/python.png", "name": "Python for Data Science, AI & Development", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/GU3RS3TP4FVR"},
         {"image_path": "images/IOT.png", "name": "Introduction and Programming with IoT Boards", "issuer": "Coursera", "date": "jul 2022" , "linke" : "https://www.coursera.org/account/accomplishments/certificate/F6NW57PNER9W"},
@@ -422,7 +430,7 @@ def main():
     PAGE_ICON = "assets/Icone.png"
     NAME = "Youssef Mouraffa"
     DESCRIPTION = """
-    Information Processing MS Graduate | Intern @ AUV Team Tomkyle | Specializing in Computer Vision and Machine Learning.
+    Information Processing MS Graduate | Researcher @ AUV Team Tomkyle | Specializing in Computer Vision and NLP
     """
     EMAIL = "mouraffayoussef@gmail.com"
 
