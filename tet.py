@@ -202,7 +202,7 @@ def set_sidbar():
     with st.sidebar:
         st.title("SUMMARY")
         st.subheader("""
-            Master's degree holder in Data Processing with a specialization in Deep Learning, complemented by hands-on data science internship experience. Proficient in statistical analysis and machine learning algorithms, with a strong team approach to developing innovative data-driven solutions.
+            With a Master's degree in Data Processing, specializing in deep learning, I bring a blend of theoretical expertise and practical application in Computer Vision and Natural Language Processing. My hands-on experiences, including a Google-prize-winning internship with Orange Morocco and a role as a Data Scientist at AUV Team Tomkyle in Germany, have honed my skills in real-world data science applications.
         """)
 
         st.write("\n \n ")
