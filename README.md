@@ -12,7 +12,7 @@ I've deployed the digital resume on Streamlit. Here's a screenshot of the deploy
 
 ![Screenshot of Deployed Resume](Screenshot_of_Deployed_Resume.png)
 
-Feel free to check it out and explore my profile by clicking [this link](https://app-8xavzdkytek3qcyzka6fzz.streamlit.app/).
+Feel free to check it out and explore my profile by clicking [this link](https://digital-resume-with-app-dny3seferew7bf6fmsens7.streamlit.app/).
 
 ## Sections
 
